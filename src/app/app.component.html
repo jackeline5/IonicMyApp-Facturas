@@ -1,0 +1,50 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+      <ion-chip>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Admin</ion-label>
+      </ion-chip>
+    
+    <ion-content class="ion-padding">
+      <ion-list> 
+        <ion-menu-toggle>
+          <ion-item routerLink="/listas-facturas">
+            <ion-icon name="clipboard-outline" slot="start"></ion-icon>
+            <ion-label>Lista de Factura</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/registro-facturas">
+            <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+            <ion-label>Registrar Factura</ion-label>
+        </ion-item>
+
+        </ion-menu-toggle>
+        
+      
+      </ion-list>
+
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar>
+        <ion-title>
+          <ion-menu-toggle>
+            <ion-item routerLink="/auth">
+              <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+              <ion-label></ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+        </ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
